@@ -67,7 +67,10 @@
 % DEFINE GEOMETRY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcounter{narrow}
+\newlength\hwidth
 \newlength\highlightwidth
+\newlength\highlightwidthnarrow
 \newlength\headerheight
 \newlength\marginleft
 \newlength\marginright
@@ -142,6 +145,10 @@
   highlightbar.even,%
   highlightbar.odd
 }
+\DeclareNewPageStyleByLayers{highlightmainnarrow}{%
+  highlightbarnarrow.even,%
+  highlightbarnarrow.odd
+}
 \DeclareNewPageStyleByLayers{headermain}{%
   header.bg
 }
@@ -151,7 +158,7 @@
   background,
   oddpage,
   innermargin,
-  width=\highlightwidth,
+  width=\hwidth,
   contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
 ]{highlightbar.odd}
 
@@ -162,7 +169,7 @@
   background,
   evenpage,
   outermargin,
-  width=\highlightwidth,
+  width=\hwidth,
   contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
 ]{highlightbar.even}
 }
@@ -178,6 +185,38 @@
   ]{highlightbar.even}
  }
 
+% define the layer for the narrow highlight bar on odd pages
+\DeclareNewLayer[
+  background,
+  oddpage,
+  innermargin,
+  width=\highlightwidthnarrow,
+  contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
+]{highlightbarnarrow.odd}
+
+% clone narrow highlight bar form odd pages to even pages
+% on same side for digital format
+\newcommand*\highlightbarsinglenarrow{%
+\DeclareNewLayer[
+  background,
+  evenpage,
+  outermargin,
+  width=\highlightwidthnarrow,
+  contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
+]{highlightbarnarrow.even}
+}
+
+% clone narrow highlight bar from odd pages to even pages
+% on opposite sides for prints
+\newcommand*\highlightbardoublenarrow{%
+\DeclareNewLayer[
+    clone=highlightbarnarrow.odd,
+    evenpage,
+    align=r,
+    hoffset=\paperwidth
+  ]{highlightbarnarrow.even}
+ }
+
 % use the correct version of the highlight bar on even pages
 % single for single, double for double
 \ifthenelse{
@@ -187,7 +226,7 @@
       background,
       evenpage,
       outermargin,
-      width=\highlightwidth,
+      width=\hwidth
       contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
     ]{highlightbar.even}
 }{%
@@ -310,6 +349,7 @@
 
 \newcommand{\highlightbar}[1]{%
     \def\@highlightbar{%
+        \setcounter{narrow}{0}
         \begin{minipage}[t]{\dimexpr \highlightwidth-\marginleft-\marginright}%
             #1%
         \end{minipage}%
@@ -321,7 +361,31 @@
 
 \newcommand{\mainbar}[1]{%
     \def\@mainbar{%
+        \setcounter{narrow}{0}
         \begin{minipage}[t]{\dimexpr \textwidth-\highlightwidth}%
+            #1%
+        \end{minipage}%
+    }
+}
+% highlight bar
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\highlightbarnarrow}[1]{%
+    \def\@highlightbarnarrow{%
+        \setcounter{narrow}{1}
+        \begin{minipage}[t]{\dimexpr \highlightwidthnarrow-\marginleft-\marginright}%
+            #1%
+        \end{minipage}%
+    }
+}
+
+% main bar
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\mainbarwide}[1]{%
+    \def\@mainbarwide{%
+        \setcounter{narrow}{1}
+        \begin{minipage}[t]{\dimexpr \textwidth-\highlightwidthnarrow}%
             #1%
         \end{minipage}%
     }
@@ -330,6 +394,8 @@
 % make body with highlight bar and main bar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\makebody}{%
+    \setcounter{narrow}{0}
+    \setlength\hwidth{\highlightwidth}
     \ifthenelse{\boolean{@singleordouble}}
         {% if single layout, the highlight bar is always left
             \@highlightbar
@@ -344,7 +410,30 @@
                 \@mainbar
                 \hspace{\dimexpr \marginleft+\marginright}%
                 \@highlightbar
-            }   
+            }
+        }
+}
+
+% make body with narrow highlight bar and main bar
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\makebodynarrow}{%
+    \setcounter{narrow}{1}
+    \setlength\hwidth{\highlightwidthnarrow}
+    \ifthenelse{\boolean{@singleordouble}}
+        {% if single layout, the highlight bar is always left
+            \@highlightbarnarrow
+            \hspace{\dimexpr \marginleft+\marginright}%
+            \@mainbarwide
+        }{% if double layout, the highlight bar alternates
+            \ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
+                \@highlightbarnarrow
+                \hspace{\dimexpr \marginleft+\marginright}%
+                \@mainbarwide
+            }{%  if the page is even, the highlight bar is on the right
+                \@mainbarwide
+                \hspace{\dimexpr \marginleft+\marginright}%
+                \@highlightbarnarrow
+            }
         }
 }
 
@@ -401,7 +490,7 @@
     \end{minipage}%
     \ifstrequal{#4}{}{}{\par \vspace{0.1em} \footnotesize #4}
     \par\normalsize
-    \vspace{0.5em}
+    \vspace{0.45em}
 }
 
 

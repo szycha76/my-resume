@@ -46,8 +46,12 @@
 
 \begin{document}
 
-\name{Dr. Nico Krieger}
-\tagline{Amazing tag line that makes HR managers want to hire you immediately.\\The tag line is aligned with the bottom of the picture to the right, so if you have\\multiple lines it fills the space to your name from the bottom. You might want to\\introduce manual line breaks to make this look nicer then simply filling up the lines.}
+\setlength\highlightwidthnarrow{60mm}
+\name{Marcin Szychowski}
+\tagline{DevOps Engineer, Linux passionate, Python/Bash/Go/Rust/PHP/COBOL Developer\\
+Network security specialist, Systems/Network Administrator, Teacher/Mentor\\
+with 20+ years of professional experience}
+
 \photo[round]{picture.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
 
 \makeheader
@@ -56,107 +60,178 @@
 
     \section{Contact}
     
-    \email{mail@mailprovider.com}
-    \phone{+49 123 456789}
-    \location{Some Street 1, 12345 City Name}
-    \vspace{0.5em}
-    \homepage{nicokrieger.com}{https://www.nicokrieger.de}
-    \github{@GiantMolecularCloud}{https://github.com/giantmolecularcloud}
-    \linkedin{Nico Krieger}{https://www.linkedin.com/in/nico-krieger-6b28151b2/}
-    \orcid{0000-0003-1104-2014}{https://www.orcid.org/0000-0003-1104-2014}
-    \ads{NASA/ADS publication list}{https://ui.adsabs.harvard.edu/search/fq=\%7B!type\%3Daqp\%20v\%3D\%24fq\_database\%7D&fq\_database=database\%3A\%20astronomy&p\_=0&q=pubdate\%3A\%5B2016-01\%20TO\%209999-12\%5D\%20author\%3A(\%22Krieger\%2C\%20Nico\%22)&sort=date\%20desc\%2C\%20bibcode\%20desc}
+    \email{szycha@gmail.com}
+    \phone{+48.791 46 00 67}
+    \location{Rabatkowa 14a, 94-214 Łódź}
+%    \vspace{0.5em}
+%    \homepage{adastor.pl}{http://adastor.pl}
+%    \github{@szycha76}{https://github.com/szycha76}
+    \linkedin{Marcin Szychowski}{https://www.linkedin.com/in/szycha}
+%    \orcid{0000-0003-1104-2014}{https://www.orcid.org/0000-0003-1104-2014}
+%    \ads{NASA/ADS publication list}{https://ui.adsabs.harvard.edu/search/fq=\%7B!type\%3Daqp\%20v\%3D\%24fq\_database\%7D&fq\_database=database\%3A\%20astronomy&p\_=0&q=pubdate\%3A\%5B2016-01\%20TO\%209999-12\%5D\%20author\%3A(\%22Krieger\%2C\%20Nico\%22)&sort=date\%20desc\%2C\%20bibcode\%20desc}
     
+    \section{In twelve words}
+    I am a natural born problem solver\\
+    with outstanding interpersonal\\communication skills
+    
+    %\vspace{0.5em}
     \section{Skills}
     
     \skillsection{Programming}
     \skill{Python}{5}
-    \skill{Bash}{4}
-    \skill{C++}{2}
-    \skill{Apple Script}{3}
-    \skill{HTML/CSS}{3}
-    \skill{LaTeX}{4}
+    \skill{Bash}{5}
+    \skill{Perl}{3}
+    \skill{Go}{3}
+    % \skill{Rust}{1}
+    \skill{HTML/CSS}{4}
+    \skill{JavaScript}{3}
+    \skill{Cobol/JCL}{1}
+    % \skill{LaTeX}{2}
     
     \vspace{0.5em}
     \skillsection{Operating Systems}
-    \skill{Linux}{4}
-    \skill{MacOS}{5}
-    \skill{Windows}{3}
+    \skill{Linux}{5}
+    % \skill{MacOS}{4}
+    \skill{Windows}{5}
+    \skill{z/OS}{2}
     
     \vspace{0.5em}
     \skillsection{Software \& Tools}
-    \skill{Visualisation}{5}
-    (e.g. matplotlib, gnuplot, ...)\\
-    \skill{Data handling/analysis}{5}
-    (e.g. numpy, scipy, pandas, ...)\\
-    \skill{Docker}{3}
-    \skill{Office}{4}
+    \skill{Database administration}{5}
+    (e.g. Oracle, PostgreSQL, MariaDB, ...)\\
+    \skill{Cyber Security}{5}
+    (e.g. PKI, TLS, netfilter, SELinux, PF, ...)\\
+    \skill{SDLC}{5}
+    (e.g. Git, Jenkins, branching strategies, ...)\\
+    \skill{Data handling/analysis}{3}
+    (e.g. numpy, scipy, pandas, pyspark, ...)\\
+    \skill{Cloud}{3}
+    (e.g. Docker, Kubernetes, GCP, ...)
     
     \vspace{0.5em}
-    \skillsection{Another skill subsection header}
-    You can also put simply text here without the dots.
     
-    \vspace{0.5em}
-    \skillsection{Languages}
-    \skill{German}{5}
+    \section{Languages}
+    \skill{Polish}{5}
     \skill{English}{5}
     \skill{French}{2}
+    \skill{Russian}{2}
+    \skill{Italian}{1}
     \bigskip
     
     \section{Certificates}
-    \simpleskill{AWS certified cloud practitioner}
-    \simpleskill{AWS certified ML Specialist}
-    \simpleskill{Databricks Lakehouse Platform}
+    \simpleskill{ITIL Foundation \#5189172 at Axelos}
 
 }
 \mainbar{
-    \section{About this template}
-    Section are set in bold face. An optional parameter of \texttt{\textbackslash section} takes a symbol to add in front of the text. This option is used in the jobs and education sections below.
+%    \section{About this template}
+%    Section are set in bold face. An optional parameter of \texttt{\textbackslash section} takes a symbol to add in front of the text. This option is used in the jobs and education sections below.
     
-    \section[\faGears]{Work history}
-    \job{date}
-        {Employer name and city}
-        {Position Title}
-        {Additional details for this position. Can be left empty to omit this line}
-    \job{01/2020 - 12/2020}
-        {An employer with a long name,\\City in new line}
-        {Previous position}
+    \section[\faGears]{Work}
+    \job{since 03/2020}
+        {GFT Poland, Łódź}
+        {DevOps Engineer}
+        {{\bfseries Technologies used}: Docker, Kubernetes, Proxmox, Ansible, Jenkins, Python 3, Bash, Git, GitHub,
+        \\BitBucket, GCP, HashiCorp Vault, SaltStack, MariaDB, PySpark, nginx, ZFS, Jinja2, Go Templates}
+    \job{12/2015 - 02/2020}
+        {GFT Poland, Łódź}
+        {Support Lead}
+        {{\bfseries Technologies used}: Oracle DB, Apache, Bash, Python 2/3, CentOS, Jenkins, TeamCity,\\
+        Java EE, JBoss, AMQ, ZFS, Gradle, groovy, Jira, Confluence, Software Defined Storage (LizardFS)}
+    \job{05/2014 - 11/2015}
+        {Rule Financial Poland, Łódź}
+        {Senior Support Consultant}
+        {{\bfseries Technologies used}: MySQL, Apache HTTPd, Bash, CentOS, Jenkins, Java EE, JBoss, AMQ, SVN}
+    \job{since 05/2008}
+        {KM Studio, Łódź}
+        {IT Training Provider}
+        {During this period I ran several trainings ranging from advanced MS Excel through HTML, Bash, Network security (with Linux), advanced MySQL and Linux Administration etc.}
+    \job{since 07/2009}
+        {INSE, Łódź}
+        {Head of IT Department}
+        {{\bfseries Technologies used}: Linux, Samba, OpenVPN, LXC, ZFS, rsync, PostgreSQL, SVN, Git}
+%    \job{10/2017 - 03/2018}
+%        {ABRA S.A.}
+%        {3rd Line Support}
+%        {My role was to provide 3rd line support for the developers working with the environment}
+    \job{06/2017 - 03/2018}
+        {ABRA S.A.}
+        {Architect/DevOps, Support Lead}
+        {{\bfseries Technologies used}: Apache HTTPd, MariaDB, Redis, Bash, ZFS, PHP, Slackware Linux\\
+        My role was to provide dev/sit/uat/production environment for the project, then (since 10/2017) to provide 2nd/3rd line support for the development team.}% working with the environment}
+    \job{12/2011 - 04/2014}
+        {Integrotech, Łódź}
+        {Analyst/Designer/Architect}
+        {My role involved R\&D in a project to design a modern hardware communication module\\
+        for the new version of Integrotech's gas flow measurement device MSP-02}
+    \job{10/2007 - 12/2011}
+        {Okręgowa Komisja Egzaminacyjna, Łódź}
+        {Senior Clerk/Developer/DBA}
+        {{\bfseries Technologies used}: Oracle DB, MySQL, PHP, Apache HTTPd, RedHat Linux, Windows Server}
+    \job{2008 - 2010}
+        {STORMmedia, Rąbień}
+        {Server Administrator}
+        {{\bfseries Technologies used}: Linux, netfilter, HTB, Squid-proxy, PHP}
+    \job{11/2003 - 09/2007}
+        {blaster.pl, Łódź}
+        {One-man IT Department}
+        {{\bfseries Technologies used}: Linux, gcc, Apache HTTPd, qmail, Squid, iptables, netfilter, HTB, PHP, MySQL}
+    \job{08-12/2002, 05-10/2003}
+        {Chili Web Applications, Łódź}
+        {Server Administrator}
         {}
     
     \section[\faMortarBoard]{Education}
-    \job{01/2019 - 12/2019}
-        {University, City}
-        {Bachelor of Something}
+    \job{2012}
+        {Społeczna Akademia Nauk, Łódź}
+        {Bachelor of Engineering}
+        {
+            {\bfseries Specialty}: Mainframe Systems\\
+            {\bfseries Thesis}: Web Chalkboard: Communication Protocol Proposal and Reference Implementation
+        }
+
+    \section[\faChild]{Pro bono}
+    \job{since 07/2017}{Slackware Linux
+    (SlackBuilds.org)}
+        {Package Maintainer}
+        {{\bfseries Packages maintained}: spl-solaris, zfs-on-linux, lizardfs, go-ipfs, ipfs-pack, nodejs-bin}
+    \job{06/2013 - 12/2016}
+        {Local Residential Community, Łódź}
+        {Board Member}
         {}
+        %{}% I served my
+        %%% local
+        % housing community
+        %%%  as a board member -
+        % to allieviate day-to-day problems
+        %%%  help planning new investments
+        % and improve the quality of life.
+        %%%  in the area.}
 
-    \section{Achievements, honours and awards}
-    \achievement{My first achievement}
-    \achievement{My second achievement}
-
-    \section{General Skills}
-    \smallskip % additional skip because tag outlines use up space
-    \tag{Tag 1}
-    \tag{Tag 2}
-    \tag{and}
-    \tag{another tag}
-    \tag{some more tags}
-    \tag{yet another one}
-    \tag{tags flow over}
-    \tag{to the next line}
-    \tag{if necessary}
+%    \section{General Skills}
+%    \smallskip % additional skip because tag outlines use up space
+%    \tag{Tag 1}
+%    \tag{Tag 2}
+%    \tag{and}
+%    \tag{another tag}
+%    \tag{some more tags}
+%    \tag{yet another one}
+%    \tag{tags flow over}
+%    \tag{to the next line}
+%    \tag{if necessary}
     
-    \medskip
-    Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
+%    \medskip
+%    Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
     
-    \section{Wheel Chart}
-    % This is taken from AltaCV
-    % see https://github.com/liantze/AltaCV for details
-    \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
-        6/8em/accent!20/Sleep,          % comma-separated list of
-        8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
-        2/8em/accent!80/Training,          % here, the color is shades of the accent color
-        3/8em/accent!60/Recovering from fighting criminals,
-        5/8em/accent/Being Batman
-    }
+%    \section{Wheel Chart}
+%    % This is taken from AltaCV
+%    % see https://github.com/liantze/AltaCV for details
+%    \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+%        6/8em/accent!20/Sleep,          % comma-separated list of
+%        8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
+%        2/8em/accent!80/Training,          % here, the color is shades of the accent color
+%        3/8em/accent!60/Recovering from fighting criminals,
+%        5/8em/accent/Being Batman
+%    }
 }
 \makebody
 \clearpage
@@ -166,62 +241,239 @@
 
 % The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
 % For an empty highlightbar, fill with empty space
-\highlightbar{\hfill}
-\mainbar{
+\mainbarwide{
 
-    \section{Another section}
+    \section[\faSearchPlus]{Project Highlights}
+    \small
+    % Most of the projects described below do not state nor client nor products
+    % that I was involved with due to confidentiality requirements from clients.
+    {\scriptsize
+    %{\bfseries Note}:
+    Most of the projects described below do not state clients nor
+    products I have been involved with due to confidentiality requirements.\par}
+    %\vspace{0.5em}
     
-    This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
-    The default page style is \texttt{headerhighlightmain} with all three elements.
-    If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
-    \medskip
-    Neither main, nor highlight bar must be filled to make this template work.
-    It is possible to use a page style with the highlight bar but leave it empty by setting an empty highlightbar \texttt{\textbackslash highlightbar\{\}}.
-
+    \subsection{GCP/GKE/dbt/BigQuery/Python/Docker Desktop {\small since 03/2022}}
+    My current project involves implementation of the dbt-based tool that would
+    ease the reporting management and execution through kubernetes jobs on
+    BigQuery Engine.  End user interface employs Docker Desktop and set of
+    Windows wrapper scripts.  I play a role of DevOps engineer.
     \vspace{0.5em}
-    \subsection{Subsection 1}
-    Demonstrate subsections.
     
-    \subsection{Subsection 2}
-    Subsection are also bold face but a smaller font then section. They also omit the rule.
+    \subsection{Python/PySpark/Pandas/Bash/Jenkins pipelines {\small 11/2020-02/2022}}
+    The project goal was to migrate reporting process from RDBMS to PySpark.
+    My role there was to develop and optimize CI/CD toolkit to perform routine
+    tasks and enforce policies.  My key achievement was a tool that would ensure
+    non-decreasing Python code test coverage through Jenkins pipelines integrated with
+    git (here: BitBucket) code repository.
+    \vspace{0.5em}
+    
+    \subsection{Linux/Java/Maven/SonarQube {\small 06/2020}}
+    My task was to help a team to assess legacy code quality for a prospective
+    project.  To this end, I set up the SonarQube, performed the analysis and
+    discussed the result with requesting team, while presenting them with the tool.
+    \vspace{0.5em}
+    
+    \subsection{SaltStack/Consul/Consul template/Vault/nginx/Proxmox/git\\
+    VMWare/MySQL/Ansible/Jenkins/Linux/Bash {\small 02/2020-06/2020}}
+    My role was to join an existing team and help them reduce technical debt
+    their long-running project had generated over years; propose robust,
+    reliable and performant backup solution; rectify/automate manual procedures etc.
+    \vspace{0.5em}
+        
+    \subsection{Artifactory/Azure/Docker/Maven/NuGet/npm/git/\\
+    Windows Server/Microsoft SQL Server {\small 01/2018-03/2018}}
+    My role was to set up Artifactory HA cluster in Azure Cloud as PoC and on Client
+    private cloud, configure it as repository proxy/emulator for various items,
+    integrate with company AD and document all of the above in Confluence.
+    \vspace{0.5em}
+    
+    \subsection{Java/Oracle DB/PostgreSQL/Angular/Docker/TeamCity/git/Go\\
+    SonarQube/Bash/Python/AMQ/RedHat Linux {\small 12/2015-02/2020}}
+    I played a role of the Support Lead in client Support Team as well as leading
+    DevOps officer.  I was responsible for production releases, process automation,
+    provisioning and maintaining of developer and CI environments for the
+    application.  I was also in charge of database-related tasks such as overseeing
+    issues with the vendor (Oracle), securely migrating data between
+    environments (prod to non-prod cloning) and between vendors (migration from
+    Oracle to PostgreSQL).  However, my key achievement in that project was a
+    versatile controlling tool for the application we supported, that would provide
+    a uniform way to control, provision, deploy, upgrade all components across all
+    environments and servers.  I proposed, designed, co-developed and maintained
+    this tool, which is still being used by the team.
+    \vspace{0.5em}
+    
+    \subsection{Java/CentOS Linux/JBoss/AMQ/PHP/MySQL/Apache/Python\\
+    Bash/SVN/Jenkins/Java EE/Memcache/Drupal {\small 05/2014-11/2015}}
+    The project goal was to prepare new version of product marketing platform
+    and migrate it from JavaEE/JBoss/Oracle stack to Drupal/Apache/PHP/MySQL.
+    The task wasn't trivial, since the platform provides complete information
+    about products offered by the client, including current and historical
+    information about composition, performance, intra-day quotes etc., comprised from
+    various and numerous sources.  Hence the new version was a complete application rewrite
+    with enhanced security, flexibility, ease of administration and performance in mind.
+    My role was to establish production and pre-production environments, design release
+    procedures, and making sure we were using the best technologies available in open
+    source ecosystem of the era; as well as training team members, supervising releases,
+    documenting, analysing and discussing with developers releases outcome etc.
+    \vspace{0.5em}
+    
+    \subsection{MSP-03 {\small 12/2011-04/2014}} %\\
+    {\bfseries Technologies used}: Embedded Linux/SoC/BusyBox\\
+    {\bfseries Normative documents}: MID Directive 2004/22/EC, ATEX Directive 94/9/EC\par
+    The project goal was to design new version of gas metering computer MSP-02
+    (which proved very successful) in the wake of MID directive coming to force,
+    so that the new device would be even more competitive and 100\% EU law compliant.
+    My role was to
+    study and analyze normative, technical and business requirements
+    and use my Linux expertise to
+    help design an interface module, capable of communicating with
+    modern information media and fully compliant with normative regulations
+    (such as MID and ATEX directives).  Thus I played roles of business analyst, system designer,
+    and embedded software developer.
+    % (such as USB sticks) that would be a significant upgrade from RS232, offered by the predecessor.
+    % that would be a giant leap forward, since the predecessor featured RS232/RS485 interfaces.
+    The project, however, was refactored and partly cancelled due to
+    business decisions. %, so I took the liberty to leave the company.
+    
+    
+     % This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
+     % The default page style is \texttt{headerhighlightmain} with all three elements.
+     % If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
+     % \medskip
+     % Neither main, nor highlight bar must be filled to make this template work.
+     % It is possible to use a page style with the highlight bar but leave it empty by setting an empty highlightbar \texttt{\textbackslash highlightbar\{\}}.
+
+     % \vspace{0.5em}
+     % \subsection{Subsection 1}
+     % Demonstrate subsections.
+    
+     % \subsection{Subsection 2}
+     % Subsection are also bold face but a smaller font then section. They also omit the rule.
     
 
 }
-\makebody
+\highlightbarnarrow{
+    \section{GFT}
+        is an IT service provider and soft\-ware 
+        developer for the finance, insurance and industrial sectors,
+        headquartered in Stuttgart, Germany.
+        GFT Group employs nearly 8.000 people in sixteen countries and offers
+        consulting and development on technology topics as well as
+        software products from cloud engineering to artificial intelligence
+        and mainframe modernization to the IoT for Industry 4.0.
+
+        GFT stands for {\bfseries Gesellschaft für Technologietransfer}
+        (Society for Technology Transfer)
+        
+    \section{Rule Financial}
+        was a British multinational com\-pany headquartered in London,
+        that provided business and technical consulting and IT services to
+        investment banks, asset and wealth management and related financial institutions.
+        Their consultants were experienced across the wholesale and investment banking domains.
+        They were established in the key financial centres of London, New York,
+        Boston and Toronto, and had specialist development centres in Poland and
+        Costa Rica.
+        
+        The company was founded by Marcus Rule in 1997 and grew to employ over 800 people
+        worldwide in 2014, when it was acquired by GFT Technologies AG.
+        
+    \section{Integrotech}
+        is an engineering business based in Łódź, focused in gas and liquids measurement,
+        industrial automation etc.
+        
+        Despite being quite small company, they are valued provider of measurement equipment
+        for major critical gas infrastructure in Poland, according to their motto:
+        
+        {\em Big enough to deliver,\\small enough to care!}
+        
+}
+\makebodynarrow
 
 
 \clearpage
-\pagestyle{empty}
 
-\section{Publications}
-\pubforcefullwidth
+\highlightbar{
+        
+    \section{Okręgowa Komisja\\Egzaminacyjna w Łodzi}
+        Regional Examination Commission in Łódź is a state body that oversees and
+        conducts state exams for primary and high school students in central Poland,
+        serving some 10\% of Polish kids.
+        
+    \section{Chemical Substances\\Bureau}
+        % carries out tasks in the field of trade in chemical
+        oversees trade of chemical
+        substances and mixtures, tobacco and
+        related products, drug precursors, and
+        new psychoactive substances.
+        It is the only central administration body located in Łódź.
+        %in order to effectively protect human health and the environment as well as the safe functioning of the substances and mixtures market.
+        
+    \section{ABRA S.A.}
+        is a major furniture dealer in Poland.  They own nearly 90 stores
+        countrywide and employ nearly 500 personnel.
+        
+    \section{INSE}
+        % is an acronym for Polish \textit{Instytut Nauk Społeczno-Eko\-no\-mi\-cznych},
+        % which translates to
+        The Institute of Socio-econo\-mic Sciences
+        (Polish: Instytut Nauk Społeczno-Ekono\-mi\-cznych)
+        is a social,
+        economic and market research body based in Łódź.
+        
+    \section{Storm Media}
+        is an Internet Service Provider based in Rąbień, west of Łódź, offering Internet access
+        and related services for thousands of households and businesses in the area between
+        Aleksandrów and Konstantynów.
+        
+    \section{KM Stutio}
+        is a family company based in Łódź, Poland, primarily focused on wide range of training.
+        The name comes from founders'
+        first names:
+        Karolina is in charge of soft skills, and Marcin for IT area.
+        %  The company provides soft skills (Karolina) and IT-related training (Marcin).
+        
+        Being agile small firm, when fiercely hit by covid lockdowns, they were able
+        to stay in business by quickly diversifying to also offer gardening services.
+    
+    \section{blaster.pl}
+        is a web hosting company established in 2003 in Łódź,
+        that peaked once to 21\textsuperscript{st} rank on the Polish market.
+        
+    \section{Chili Web Applications}
+        was a web hosting company that emerged from major computer equipment
+        shop when the golden era of PCs in Poland was coming to an end.
+        In 2003 Chili Web sold
+        its web hosting division and focused on providing general IT services.
+    
+}
+\mainbar{
+    \section[\faHistory]{Earlier experience}
+}
 
-Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
-Also show off the macros for publications that uses small icons for authors, date, journal and links.
+% \makebody
+% \pagestyle{empty}
 
-Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list to take up all the available space.
-The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
-\bigskip
 
-\publication
- {The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
- {\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
- {2020} % Year
- {The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
- {\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
+% \faGlass - faGlass\\ \faMusic - faMusic\\ \faSearch - faSearch\\ \faEnvelopeO - faEnvelopeO\\ \faHeart - faHeart\\ \faStar - faStar\\ \faStarO - faStarO\\ \faUser - faUser\\ \faFilm - faFilm\\ \faThLarge - faThLarge\\ \faTh - faTh\\ \faThList - faThList\\ \faCheck - faCheck\\ \faTimes - faTimes\\ \faSearchPlus - faSearchPlus\\ \faSearchMinus - faSearchMinus\\ \faPowerOff - faPowerOff\\ \faSignal - faSignal\\ \faCog - faCog\\ \faTrashO - faTrashO\\ \faHome - faHome\\ \faFileO - faFileO\\ \faClockO - faClockO\\ \faRoad - faRoad\\ \faDownload - faDownload\\ \faArrowCircleODown - faArrowCircleODown\\ \faArrowCircleOUp - faArrowCircleOUp\\ \faInbox - faInbox\\ \faPlayCircleO - faPlayCircleO\\ \faRepeat - faRepeat\\ \faRefresh - faRefresh\\ \faListAlt - faListAlt\\ \faLock - faLock\\ \faFlag - faFlag\\ \faHeadphones - faHeadphones\\ \faVolumeOff - faVolumeOff\\ \faVolumeDown - faVolumeDown\\ \faVolumeUp - faVolumeUp\\ \faQrcode - faQrcode\\ \faBarcode - faBarcode\\ \faTag - faTag\\ \faTags - faTags\\ \faBook - faBook\\ \faBookmark - faBookmark\\ \faPrint - faPrint\\ \faCamera - faCamera\\ \faFont - faFont\\ \faBold - faBold\\ \faItalic - faItalic\\ \faTextHeight - faTextHeight\\ \faTextWidth - faTextWidth\\ \faAlignLeft - faAlignLeft\\ \faAlignCenter - faAlignCenter\\ \faAlignRight - faAlignRight\\ \faAlignJustify - faAlignJustify\\ \faList - faList\\ \faOutdent - faOutdent\\ \faIndent - faIndent\\ \faVideoCamera - faVideoCamera\\ \faPictureO - faPictureO\\ \faPencil - faPencil\\ \faMapMarker - faMapMarker\\ \faAdjust - faAdjust\\ \faTint - faTint\\ \faPencilSquareO - faPencilSquareO\\ \faShareSquareO - faShareSquareO\\ \faCheckSquareO - faCheckSquareO\\ \faArrows - faArrows\\ \faStepBackward - faStepBackward\\ \faFastBackward - faFastBackward\\ \faBackward - faBackward\\ \faPlay - faPlay\\ \faPause - faPause\\ \faStop - faStop\\ \faForward - faForward\\ \faFastForward - faFastForward\\ \faStepForward - faStepForward\\ \faEject - faEject\\ \faChevronLeft - faChevronLeft\\ \faChevronRight - faChevronRight\\ \faPlusCircle - faPlusCircle\\ \faMinusCircle - faMinusCircle\\ \faTimesCircle - faTimesCircle\\ \faCheckCircle - faCheckCircle\\ \faQuestionCircle - faQuestionCircle\\ \faInfoCircle - faInfoCircle\\ \faCrosshairs - faCrosshairs\\ \faTimesCircleO - faTimesCircleO\\ \faCheckCircleO - faCheckCircleO\\ \faBan - faBan\\ \faArrowLeft - faArrowLeft\\ \faArrowRight - faArrowRight\\ \faArrowUp - faArrowUp\\ \faArrowDown - faArrowDown\\ \faShare - faShare\\ \faExpand - faExpand\\ \faCompress - faCompress\\ \faPlus - faPlus\\ \faMinus - faMinus\\ \faAsterisk - faAsterisk\\ \faExclamationCircle - faExclamationCircle\\ \faGift - faGift\\ \faLeaf - faLeaf\\ \faFire - faFire\\ \faEye - faEye\\ \faEyeSlash - faEyeSlash\\ \faExclamationTriangle - faExclamationTriangle\\ \faPlane - faPlane\\ \faCalendar - faCalendar\\ \faRandom - faRandom\\ \faComment - faComment\\ \faMagnet - faMagnet\\ \faChevronUp - faChevronUp\\ \faChevronDown - faChevronDown\\ \faRetweet - faRetweet\\ \faShoppingCart - faShoppingCart\\ \faFolder - faFolder\\ \faFolderOpen - faFolderOpen\\ \faArrowsV - faArrowsV\\ \faArrowsH - faArrowsH\\ \faBarChart - faBarChart\\ \faTwitterSquare - faTwitterSquare\\ \faFacebookSquare - faFacebookSquare\\ \faCameraRetro - faCameraRetro\\ \faKey - faKey\\ \faCogs - faCogs\\ \faComments - faComments\\ \faThumbsOUp - faThumbsOUp\\ \faThumbsODown - faThumbsODown\\ \faStarHalf - faStarHalf\\ \faHeartO - faHeartO\\ \faSignOut - faSignOut\\ \faLinkedinSquare - faLinkedinSquare\\ \faThumbTack - faThumbTack\\ \faExternalLink - faExternalLink\\ \faSignIn - faSignIn\\ \faTrophy - faTrophy\\ \faGithubSquare - faGithubSquare\\ \faUpload - faUpload\\ \faLemonO - faLemonO\\ \faPhone - faPhone\\ \faSquareO - faSquareO\\ \faBookmarkO - faBookmarkO\\ \faPhoneSquare - faPhoneSquare\\ \faTwitter - faTwitter\\ \faFacebook - faFacebook\\ \faGithub - faGithub\\ \faUnlock - faUnlock\\ \faCreditCard - faCreditCard\\ \faRss - faRss\\ \faHddO - faHddO\\ \faBullhorn - faBullhorn\\ \faBell - faBell\\ \faCertificate - faCertificate\\ \faHandORight - faHandORight\\ \faHandOLeft - faHandOLeft\\ \faHandOUp - faHandOUp\\ \faHandODown - faHandODown\\ \faArrowCircleLeft - faArrowCircleLeft\\ \faArrowCircleRight - faArrowCircleRight\\ \faArrowCircleUp - faArrowCircleUp\\ \faArrowCircleDown - faArrowCircleDown\\ \faGlobe - faGlobe\\ \faWrench - faWrench\\ \faTasks - faTasks\\ \faFilter - faFilter\\ \faBriefcase - faBriefcase\\ \faArrowsAlt - faArrowsAlt\\ \faUsers - faUsers\\ \faLink - faLink\\ \faCloud - faCloud\\ \faFlask - faFlask\\ \faScissors - faScissors\\ \faFilesO - faFilesO\\ \faPaperclip - faPaperclip\\ \faFloppyO - faFloppyO\\ \faSquare - faSquare\\ \faBars - faBars\\ \faListUl - faListUl\\ \faListOl - faListOl\\ \faStrikethrough - faStrikethrough\\ \faUnderline - faUnderline\\ \faTable - faTable\\ \faMagic - faMagic\\ \faTruck - faTruck\\ \faPinterest - faPinterest\\ \faPinterestSquare - faPinterestSquare\\ \faGooglePlusSquare - faGooglePlusSquare\\ \faGooglePlus - faGooglePlus\\ \faMoney - faMoney\\ \faCaretDown - faCaretDown\\ \faCaretUp - faCaretUp\\ \faCaretLeft - faCaretLeft\\ \faCaretRight - faCaretRight\\ \faColumns - faColumns\\ \faSort - faSort\\ \faSortDesc - faSortDesc\\ \faSortAsc - faSortAsc\\ \faEnvelope - faEnvelope\\ \faLinkedin - faLinkedin\\ \faUndo - faUndo\\ \faGavel - faGavel\\ \faTachometer - faTachometer\\ \faCommentO - faCommentO\\ \faCommentsO - faCommentsO\\ \faBolt - faBolt\\ \faSitemap - faSitemap\\ \faUmbrella - faUmbrella\\ \faClipboard - faClipboard\\ \faLightbulbO - faLightbulbO\\ \faExchange - faExchange\\ \faCloudDownload - faCloudDownload\\ \faCloudUpload - faCloudUpload\\ \faUserMd - faUserMd\\ \faStethoscope - faStethoscope\\ \faSuitcase - faSuitcase\\ \faBellO - faBellO\\ \faCoffee - faCoffee\\ \faCutlery - faCutlery\\ \faFileTextO - faFileTextO\\ \faBuildingO - faBuildingO\\ \faHospitalO - faHospitalO\\ \faAmbulance - faAmbulance\\ \faMedkit - faMedkit\\ \faFighterJet - faFighterJet\\ \faBeer - faBeer\\ \faHSquare - faHSquare\\ \faPlusSquare - faPlusSquare\\ \faAngleDoubleLeft - faAngleDoubleLeft\\ \faAngleDoubleRight - faAngleDoubleRight\\ \faAngleDoubleUp - faAngleDoubleUp\\ \faAngleDoubleDown - faAngleDoubleDown\\ \faAngleLeft - faAngleLeft\\ \faAngleRight - faAngleRight\\ \faAngleUp - faAngleUp\\ \faAngleDown - faAngleDown\\ \faDesktop - faDesktop\\ \faLaptop - faLaptop\\ \faTablet - faTablet\\ \faMobile - faMobile\\ \faCircleO - faCircleO\\ \faQuoteLeft - faQuoteLeft\\ \faQuoteRight - faQuoteRight\\ \faSpinner - faSpinner\\ \faCircle - faCircle\\ \faReply - faReply\\ \faGithubAlt - faGithubAlt\\ \faFolderO - faFolderO\\ \faFolderOpenO - faFolderOpenO\\ \faSmileO - faSmileO\\ \faFrownO - faFrownO\\ \faMehO - faMehO\\ \faGamepad - faGamepad\\ \faKeyboardO - faKeyboardO\\ \faFlagO - faFlagO\\ \faFlagCheckered - faFlagCheckered\\ \faTerminal - faTerminal\\ \faCode - faCode\\ \faReplyAll - faReplyAll\\ \faStarHalfO - faStarHalfO\\ \faLocationArrow - faLocationArrow\\ \faCrop - faCrop\\ \faCodeFork - faCodeFork\\ \faChainBroken - faChainBroken\\ \faQuestion - faQuestion\\ \faInfo - faInfo\\ \faExclamation - faExclamation\\ \faSuperscript - faSuperscript\\ \faSubscript - faSubscript\\ \faEraser - faEraser\\ \faPuzzlePiece - faPuzzlePiece\\ \faMicrophone - faMicrophone\\ \faMicrophoneSlash - faMicrophoneSlash\\ \faShield - faShield\\ \faCalendarO - faCalendarO\\ \faFireExtinguisher - faFireExtinguisher\\ \faRocket - faRocket\\ \faMaxcdn - faMaxcdn\\ \faChevronCircleLeft - faChevronCircleLeft\\ \faChevronCircleRight - faChevronCircleRight\\ \faChevronCircleUp - faChevronCircleUp\\ \faChevronCircleDown - faChevronCircleDown\\ \faHtml5 - faHtml5\\ \faCss3 - faCss3\\ \faAnchor - faAnchor\\ \faUnlockAlt - faUnlockAlt\\ \faBullseye - faBullseye\\ \faEllipsisH - faEllipsisH\\ \faEllipsisV - faEllipsisV\\ \faRssSquare - faRssSquare\\ \faPlayCircle - faPlayCircle\\ \faTicket - faTicket\\ \faMinusSquare - faMinusSquare\\ \faMinusSquareO - faMinusSquareO\\ \faLevelUp - faLevelUp\\ \faLevelDown - faLevelDown\\ \faCheckSquare - faCheckSquare\\ \faPencilSquare - faPencilSquare\\ \faExternalLinkSquare - faExternalLinkSquare\\ \faShareSquare - faShareSquare\\ \faCompass - faCompass\\ \faCaretSquareODown - faCaretSquareODown\\ \faCaretSquareOUp - faCaretSquareOUp\\ \faCaretSquareORight - faCaretSquareORight\\ \faEur - faEur\\ \faGbp - faGbp\\ \faUsd - faUsd\\ \faInr - faInr\\ \faJpy - faJpy\\ \faRub - faRub\\ \faKrw - faKrw\\ \faBtc - faBtc\\ \faFile - faFile\\ \faFileText - faFileText\\ \faSortAlphaAsc - faSortAlphaAsc\\ \faSortAlphaDesc - faSortAlphaDesc\\ \faSortAmountAsc - faSortAmountAsc\\ \faSortAmountDesc - faSortAmountDesc\\ \faSortNumericAsc - faSortNumericAsc\\ \faSortNumericDesc - faSortNumericDesc\\ \faThumbsUp - faThumbsUp\\ \faThumbsDown - faThumbsDown\\ \faYoutubeSquare - faYoutubeSquare\\ \faYoutube - faYoutube\\ \faXing - faXing\\ \faXingSquare - faXingSquare\\ \faYoutubePlay - faYoutubePlay\\ \faDropbox - faDropbox\\ \faStackOverflow - faStackOverflow\\ \faInstagram - faInstagram\\ \faFlickr - faFlickr\\ \faAdn - faAdn\\ \faBitbucket - faBitbucket\\ \faBitbucketSquare - faBitbucketSquare\\ \faTumblr - faTumblr\\ \faTumblrSquare - faTumblrSquare\\ \faLongArrowDown - faLongArrowDown\\ \faLongArrowUp - faLongArrowUp\\ \faLongArrowLeft - faLongArrowLeft\\ \faLongArrowRight - faLongArrowRight\\ \faApple - faApple\\ \faWindows - faWindows\\ \faAndroid - faAndroid\\ \faLinux - faLinux\\ \faDribbble - faDribbble\\ \faSkype - faSkype\\ \faFoursquare - faFoursquare\\ \faTrello - faTrello\\ \faFemale - faFemale\\ \faMale - faMale\\ \faGratipay - faGratipay\\ \faSunO - faSunO\\ \faMoonO - faMoonO\\ \faArchive - faArchive\\ \faBug - faBug\\ \faVk - faVk\\ \faWeibo - faWeibo\\ \faRenren - faRenren\\ \faPagelines - faPagelines\\ \faStackExchange - faStackExchange\\ \faArrowCircleORight - faArrowCircleORight\\ \faArrowCircleOLeft - faArrowCircleOLeft\\ \faCaretSquareOLeft - faCaretSquareOLeft\\ \faDotCircleO - faDotCircleO\\ \faWheelchair - faWheelchair\\ \faVimeoSquare - faVimeoSquare\\ \faTry - faTry\\ \faPlusSquareO - faPlusSquareO\\ \faSpaceShuttle - faSpaceShuttle\\ \faSlack - faSlack\\ \faEnvelopeSquare - faEnvelopeSquare\\ \faWordpress - faWordpress\\ \faOpenid - faOpenid\\ \faUniversity - faUniversity\\ \faGraduationCap - faGraduationCap\\ \faYahoo - faYahoo\\ \faGoogle - faGoogle\\ \faReddit - faReddit\\ \faRedditSquare - faRedditSquare\\ \faStumbleuponCircle - faStumbleuponCircle\\ \faStumbleupon - faStumbleupon\\ \faDelicious - faDelicious\\ \faDigg - faDigg\\ \faPiedPiperPp - faPiedPiperPp\\ \faPiedPiperAlt - faPiedPiperAlt\\ \faDrupal - faDrupal\\ \faJoomla - faJoomla\\ \faLanguage - faLanguage\\ \faFax - faFax\\ \faBuilding - faBuilding\\ \faChild - faChild\\ \faPaw - faPaw\\ \faSpoon - faSpoon\\ \faCube - faCube\\ \faCubes - faCubes\\ \faBehance - faBehance\\ \faBehanceSquare - faBehanceSquare\\ \faSteam - faSteam\\ \faSteamSquare - faSteamSquare\\ \faRecycle - faRecycle\\ \faCar - faCar\\ \faTaxi - faTaxi\\ \faTree - faTree\\ \faSpotify - faSpotify\\ \faDeviantart - faDeviantart\\ \faSoundcloud - faSoundcloud\\ \faDatabase - faDatabase\\ \faFilePdfO - faFilePdfO\\ \faFileWordO - faFileWordO\\ \faFileExcelO - faFileExcelO\\ \faFilePowerpointO - faFilePowerpointO\\ \faFileImageO - faFileImageO\\ \faFileArchiveO - faFileArchiveO\\ \faFileAudioO - faFileAudioO\\ \faFileVideoO - faFileVideoO\\ \faFileCodeO - faFileCodeO\\ \faVine - faVine\\ \faCodepen - faCodepen\\ \faJsfiddle - faJsfiddle\\ \faLifeRing - faLifeRing\\ \faCircleONotch - faCircleONotch\\ \faRebel - faRebel\\ \faEmpire - faEmpire\\ \faGitSquare - faGitSquare\\ \faGit - faGit\\ \faHackerNews - faHackerNews\\ \faTencentWeibo - faTencentWeibo\\ \faQq - faQq\\ \faWeixin - faWeixin\\ \faPaperPlane - faPaperPlane\\ \faPaperPlaneO - faPaperPlaneO\\ \faHistory - faHistory\\ \faCircleThin - faCircleThin\\ \faHeader - faHeader\\ \faParagraph - faParagraph\\ \faSliders - faSliders\\ \faShareAlt - faShareAlt\\ \faShareAltSquare - faShareAltSquare\\ \faBomb - faBomb\\ \faFutbolO - faFutbolO\\ \faTty - faTty\\ \faBinoculars - faBinoculars\\ \faPlug - faPlug\\ \faSlideshare - faSlideshare\\ \faTwitch - faTwitch\\ \faYelp - faYelp\\ \faNewspaperO - faNewspaperO\\ \faWifi - faWifi\\ \faCalculator - faCalculator\\ \faPaypal - faPaypal\\ \faGoogleWallet - faGoogleWallet\\ \faCcVisa - faCcVisa\\ \faCcMastercard - faCcMastercard\\ \faCcDiscover - faCcDiscover\\ \faCcAmex - faCcAmex\\ \faCcPaypal - faCcPaypal\\ \faCcStripe - faCcStripe\\ \faBellSlash - faBellSlash\\ \faBellSlashO - faBellSlashO\\ \faTrash - faTrash\\ \faCopyright - faCopyright\\ \faAt - faAt\\ \faEyedropper - faEyedropper\\ \faPaintBrush - faPaintBrush\\ \faBirthdayCake - faBirthdayCake\\ \faAreaChart - faAreaChart\\ \faPieChart - faPieChart\\ \faLineChart - faLineChart\\ \faLastfm - faLastfm\\ \faLastfmSquare - faLastfmSquare\\ \faToggleOff - faToggleOff\\ \faToggleOn - faToggleOn\\ \faBicycle - faBicycle\\ \faBus - faBus\\ \faIoxhost - faIoxhost\\ \faAngellist - faAngellist\\ \faCc - faCc\\ \faIls - faIls\\ \faMeanpath - faMeanpath\\ \faBuysellads - faBuysellads\\ \faConnectdevelop - faConnectdevelop\\ \faDashcube - faDashcube\\ \faForumbee - faForumbee\\ \faLeanpub - faLeanpub\\ \faSellsy - faSellsy\\ \faShirtsinbulk - faShirtsinbulk\\ \faSimplybuilt - faSimplybuilt\\ \faSkyatlas - faSkyatlas\\ \faCartPlus - faCartPlus\\ \faCartArrowDown - faCartArrowDown\\ \faDiamond - faDiamond\\ \faShip - faShip\\ \faUserSecret - faUserSecret\\ \faMotorcycle - faMotorcycle\\ \faStreetView - faStreetView\\ \faHeartbeat - faHeartbeat\\ \faVenus - faVenus\\ \faMars - faMars\\ \faMercury - faMercury\\ \faTransgender - faTransgender\\ \faTransgenderAlt - faTransgenderAlt\\ \faVenusDouble - faVenusDouble\\ \faMarsDouble - faMarsDouble\\ \faVenusMars - faVenusMars\\ \faMarsStroke - faMarsStroke\\ \faMarsStrokeV - faMarsStrokeV\\ \faMarsStrokeH - faMarsStrokeH\\ \faNeuter - faNeuter\\ \faGenderless - faGenderless\\ \faFacebookOfficial - faFacebookOfficial\\ \faPinterestP - faPinterestP\\ \faWhatsapp - faWhatsapp\\ \faServer - faServer\\ \faUserPlus - faUserPlus\\ \faUserTimes - faUserTimes\\ \faBed - faBed\\ \faViacoin - faViacoin\\ \faTrain - faTrain\\ \faSubway - faSubway\\ \faMedium - faMedium\\ \faYCombinator - faYCombinator\\ \faOptinMonster - faOptinMonster\\ \faOpencart - faOpencart\\ \faExpeditedssl - faExpeditedssl\\ \faBatteryFull - faBatteryFull\\ \faBatteryThreeQuarters - faBatteryThreeQuarters\\ \faBatteryHalf - faBatteryHalf\\ \faBatteryQuarter - faBatteryQuarter\\ \faBatteryEmpty - faBatteryEmpty\\ \faMousePointer - faMousePointer\\ \faICursor - faICursor\\ \faObjectGroup - faObjectGroup\\ \faObjectUngroup - faObjectUngroup\\ \faStickyNote - faStickyNote\\ \faStickyNoteO - faStickyNoteO\\ \faCcJcb - faCcJcb\\ \faCcDinersClub - faCcDinersClub\\ \faClone - faClone\\ \faBalanceScale - faBalanceScale\\ \faHourglassO - faHourglassO\\ \faHourglassStart - faHourglassStart\\ \faHourglassHalf - faHourglassHalf\\ \faHourglassEnd - faHourglassEnd\\ \faHourglass - faHourglass\\ \faHandRockO - faHandRockO\\ \faHandPaperO - faHandPaperO\\ \faHandScissorsO - faHandScissorsO\\ \faHandLizardO - faHandLizardO\\ \faHandSpockO - faHandSpockO\\ \faHandPointerO - faHandPointerO\\ \faHandPeaceO - faHandPeaceO\\ \faTrademark - faTrademark\\ \faRegistered - faRegistered\\ \faCreativeCommons - faCreativeCommons\\ \faGg - faGg\\ \faGgCircle - faGgCircle\\ \faTripadvisor - faTripadvisor\\ \faOdnoklassniki - faOdnoklassniki\\ \faOdnoklassnikiSquare - faOdnoklassnikiSquare\\ \faGetPocket - faGetPocket\\ \faWikipediaW - faWikipediaW\\ \faSafari - faSafari\\ \faChrome - faChrome\\ \faFirefox - faFirefox\\ \faOpera - faOpera\\ \faInternetExplorer - faInternetExplorer\\ \faTelevision - faTelevision\\ \faContao - faContao\\ \fa500Px - fa500Px\\ \faAmazon - faAmazon\\ \faCalendarPlusO - faCalendarPlusO\\ \faCalendarMinusO - faCalendarMinusO\\ \faCalendarTimesO - faCalendarTimesO\\ \faCalendarCheckO - faCalendarCheckO\\ \faIndustry - faIndustry\\ \faMapPin - faMapPin\\ \faMapSigns - faMapSigns\\ \faMapO - faMapO\\ \faMap - faMap\\ \faCommenting - faCommenting\\ \faCommentingO - faCommentingO\\ \faHouzz - faHouzz\\ \faVimeo - faVimeo\\ \faBlackTie - faBlackTie\\ \faFonticons - faFonticons\\ \faRedditAlien - faRedditAlien\\ \faEdge - faEdge\\ \faCreditCardAlt - faCreditCardAlt\\ \faCodiepie - faCodiepie\\ \faModx - faModx\\ \faFortAwesome - faFortAwesome\\ \faUsb - faUsb\\ \faProductHunt - faProductHunt\\ \faMixcloud - faMixcloud\\ \faScribd - faScribd\\ \faPauseCircle - faPauseCircle\\ \faPauseCircleO - faPauseCircleO\\ \faStopCircle - faStopCircle\\ \faStopCircleO - faStopCircleO\\ \faShoppingBag - faShoppingBag\\ \faShoppingBasket - faShoppingBasket\\ \faHashtag - faHashtag\\ \faBluetooth - faBluetooth\\ \faBluetoothB - faBluetoothB\\ \faPercent - faPercent\\ \faGitlab - faGitlab\\ \faWpbeginner - faWpbeginner\\ \faWpforms - faWpforms\\ \faEnvira - faEnvira\\ \faUniversalAccess - faUniversalAccess\\ \faWheelchairAlt - faWheelchairAlt\\ \faQuestionCircleO - faQuestionCircleO\\ \faBlind - faBlind\\ \faAudioDescription - faAudioDescription\\ \faVolumeControlPhone - faVolumeControlPhone\\ \faBraille - faBraille\\ \faAssistiveListeningSystems - faAssistiveListeningSystems\\ \faAmericanSignLanguageInterpreting - faAmericanSignLanguageInterpreting\\ \faDeaf - faDeaf\\ \faGlide - faGlide\\ \faGlideG - faGlideG\\ \faSignLanguage - faSignLanguage\\ \faLowVision - faLowVision\\ \faViadeo - faViadeo\\ \faViadeoSquare - faViadeoSquare\\ \faSnapchat - faSnapchat\\ \faSnapchatGhost - faSnapchatGhost\\ \faSnapchatSquare - faSnapchatSquare\\ \faPiedPiper - faPiedPiper\\ \faFirstOrder - faFirstOrder\\ \faYoast - faYoast\\ \faThemeisle - faThemeisle\\ \faGooglePlusOfficial - faGooglePlusOfficial\\ \faFontAwesome - faFontAwesome\\
 
-\publication
- {The molecular ISM in the Super Star Clusters of the starburst NGC253} % Title
- {\textbf{N. Krieger}, A. Bolatto, A. Leroy, R. Levy, E. Mills, D. Meier, S. Veilleux, F. Walter, A. Wei\ss} % Authors
- {2020} % Year
- {The Astrophysical Journal Vol.897, Issue 2, id.176} % Journal
- {\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...897..176K}, \arXiv{https://arxiv.org/abs/2006.08262}} % ADS & arxiv links
 
-\publication
- {The Molecular Outflow in NGC\,253 at a Resolution of Two Parsecs} % Title
- {\textbf{N. Krieger}, A. Bolatto, F. Walter, A. Leroy, L. Zschaechner, D. Meier, J. Ott, A. Wei\ss, E. Mills, S. Veilleux, M. Gorski} % Authors
- {2019} % Year
- {The Astrophysical Journal Vol.881, Issue 1, article id. 43, 20 pp} % Journal
- {\ADS{https://ui.adsabs.harvard.edu/abs/2019ApJ...881...43K}, \arXiv{https://arxiv.org/abs/1907.00731}} % ADS & arxiv links
+
+% \section{Publications}
+% \pubforcefullwidth
+
+% Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
+% Also show off the macros for publications that uses small icons for authors, date, journal and links.
+
+% Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list to take up all the available space.
+% The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
+% \bigskip
+
+%\publication
+% {The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
+% {\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
+% {2020} % Year
+% {The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
+% {\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
 
 \end{document}
