@@ -309,15 +309,15 @@
             \end{minipage}\hfil%
             \begin{minipage}[t]{\@photodiameter}                                % to top align name and photo add [t] here
                 \vspace{0cm}
-       % format as square or round
-       \ifthenelse{\equal{\@photoformat}{square}}{%
-           \includegraphics[width=\linewidth]{\@photo}%
-       }{%
-           \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
-       }
-      \end{minipage}%
+    			% format as square or round
+    			\ifthenelse{\equal{\@photoformat}{square}}{%
+    			    \includegraphics[width=\linewidth]{\@photo}%
+    			}{%
+    			    \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
+    			}
+    		\end{minipage}%
             }{}
- \end{minipage}%
+	\end{minipage}%
 }
 
 \newcommand{\emptyheader}{%
